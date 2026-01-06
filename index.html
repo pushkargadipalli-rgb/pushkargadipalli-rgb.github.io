@@ -1,133 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Pushkar Gadipalli | Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #2c2c2c;
     }
-    h1, h2 {
-      color: #222;
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
     }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      margin-bottom: 5px;
+    }
+
+    header p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    header a {
+      color: #0b5ed7;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: 500;
+    }
+
     section {
       background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      margin-top: 0;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .sub-title {
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 14px;
+      margin-top: 40px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <section>
-    <h1>Pushkar Gadipalli</h1>
-    <p>
-      Master’s Student in Information Systems | Aspiring Data & Systems Analyst
-    </p>
-    <p>
-      📍 Mount Pleasant, MI <br>
-      📧 pushkargadipalli@gmail.com <br>
-      🔗 <a href="https://www.linkedin.com/in/pushkar-gadipalli-267216322/" target="_blank">
-        LinkedIn Profile
-      </a>
-    </p>
-  </section>
+  <div class="container">
 
-  <!-- ABOUT ME -->
-  <section>
-    <h2>About Me</h2>
-    <p>
-      Motivated and dependable professional with a strong foundation in information systems,
-      data analysis, and software development. Skilled in problem-solving, collaboration,
-      and delivering high-quality results. Passionate about leveraging technology for
-      process improvement and organizational efficiency.
-    </p>
-  </section>
+    <!-- HEADER -->
+    <header>
+      <h1>Pushkar Gadipalli</h1>
+      <p>Master’s Student in Information Systems | Aspiring Data & Systems Analyst</p>
+      <p>📍 Mount Pleasant, MI</p>
+      <p>
+        <a href="mailto:pushkargadipalli@gmail.com">Email</a> |
+        <a href="https://www.linkedin.com/in/pushkar-gadipalli-267216322/" target="_blank">LinkedIn</a>
+      </p>
+    </header>
 
-  <!-- EDUCATION -->
-  <section>
-    <h2>Education</h2>
-    <p>
-      <strong>Central Michigan University</strong><br>
-      Master of Science in Information Systems (MSIS)<br>
-      CGPA: 3.95<br>
-      Aug 2024 – May 2026
-    </p>
+    <!-- ABOUT -->
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Motivated and dependable professional with a strong foundation in information systems,
+        data analysis, and software development. Skilled in problem-solving, collaboration,
+        and delivering high-quality results. Passionate about leveraging technology to drive
+        process improvement and organizational efficiency.
+      </p>
+    </section>
 
-    <p>
-      <strong>Neil Gogte Institute of Technology, Hyderabad</strong><br>
-      Bachelor of Engineering in Computer Science and Engineering<br>
-      Aug 2019 – June 2023
-    </p>
-  </section>
+    <!-- EDUCATION -->
+    <section>
+      <h2>Education</h2>
 
-  <!-- PROJECTS -->
-  <section>
-    <h2>Projects</h2>
+      <p class="sub-title">Central Michigan University</p>
+      <p>
+        Master of Science in Information Systems (MSIS)<br>
+        CGPA: 3.95<br>
+        Aug 2024 – May 2026
+      </p>
 
-    <p>
-      <strong>Simulation Powered Learning (SPL) SimProject</strong>
-    </p>
-    <ul>
-      <li>Led a team of 6 members to complete the project over an 11-week period.</li>
-      <li>Managed task allocation and ensured on-time completion.</li>
-      <li>Facilitated stakeholder meetings to track progress and align goals.</li>
-      <li><strong>Technology:</strong> SimProject</li>
-    </ul>
+      <p class="sub-title">Neil Gogte Institute of Technology, Hyderabad</p>
+      <p>
+        Bachelor of Engineering in Computer Science and Engineering<br>
+        Aug 2019 – June 2023
+      </p>
+    </section>
 
-    <p>
-      <strong>Canteen Automation System</strong>
-    </p>
-    <ul>
-      <li>Designed an intuitive front-end using HTML and CSS.</li>
-      <li>Built responsive pages allowing orders to be completed in under 2 minutes.</li>
-      <li>Collaborated in code reviews and optimized performance.</li>
-      <li>Demonstrated leadership by coordinating team tasks.</li>
-      <li><strong>Technologies:</strong> HTML, CSS, Python, JSP, Servlets, MySQL</li>
-    </ul>
-  </section>
+    <!-- PROJECTS -->
+    <section>
+      <h2>Projects</h2>
 
-  <!-- EXPERIENCE -->
-  <section>
-    <h2>Work Experience</h2>
-    <p>
-      <strong>Research Associate</strong><br>
-      Sutherland Global Services Pvt. Ltd.<br>
-      Nov 2023 – Jan 2024
-    </p>
-    <ul>
-      <li>Optimized SQL queries for bulk data uploads.</li>
-      <li>Resolved data upload errors and ensured deduplication compliance.</li>
-      <li>Exported data to Excel for reporting and analysis.</li>
-      <li>Prepared concise technical documentation to streamline onboarding.</li>
-    </ul>
-  </section>
+      <p class="sub-title">Simulation Powered Learning (SPL) SimProject</p>
+      <ul>
+        <li>Led a team of 6 members to complete the project over an 11-week period.</li>
+        <li>Managed task allocation and ensured timely project delivery.</li>
+        <li>Facilitated stakeholder meetings to track progress and align goals.</li>
+        <li><strong>Technology:</strong> SimProject</li>
+      </ul>
 
-  <!-- SKILLS -->
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Programming:</strong> Python (NASSCOM Certified), Java (Basics), HTML, CSS, JSP, Servlets</li>
-      <li><strong>Databases & BI:</strong> MySQL, SQL Server, Tableau, Power BI, ETL</li>
-      <li><strong>Business Analysis:</strong> Requirement Gathering, SDLC, Process Improvement</li>
-      <li><strong>AWS:</strong> Cloud Computing Fundamentals, Core AWS Services</li>
-      <li><strong>Core Skills:</strong> Data Analysis, Documentation, Project Management Basics</li>
-    </ul>
-  </section>
+      <p class="sub-title">Canteen Automation System</p>
+      <ul>
+        <li>Designed an intuitive and responsive front-end using HTML and CSS.</li>
+        <li>Enabled users to complete food orders in under 2 minutes.</li>
+        <li>Collaborated in code reviews and optimized system performance.</li>
+        <li>Coordinated team tasks and demonstrated leadership.</li>
+        <li><strong>Technologies:</strong> HTML, CSS, Python, JSP, Servlets, MySQL</li>
+      </ul>
+    </section>
 
-  <!-- CERTIFICATION -->
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>AWS Certified Cloud Practitioner</li>
-    </ul>
-  </section>
+    <!-- EXPERIENCE -->
+    <section>
+      <h2>Work Experience</h2>
+
+      <p class="sub-title">Research Associate — Sutherland Global Services Pvt. Ltd.</p>
+      <p>Nov 2023 – Jan 2024</p>
+      <ul>
+        <li>Optimized SQL queries for bulk data uploads, improving efficiency.</li>
+        <li>Resolved data upload errors and ensured deduplication compliance.</li>
+        <li>Exported and analyzed data using Excel for reporting purposes.</li>
+        <li>Prepared concise technical documentation to streamline onboarding.</li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+      <h2>Skills & Certifications</h2>
+      <ul>
+        <li><strong>Programming:</strong> Python (NASSCOM Certified), Java (Basics), HTML, CSS, JSP, Servlets</li>
+        <li><strong>Databases & BI:</strong> MySQL, SQL Server, Tableau, Power BI, ETL</li>
+        <li><strong>Business Analysis:</strong> Requirement Gathering, SDLC, Process Improvement</li>
+        <li><strong>AWS & Cloud:</strong> Cloud Computing Fundamentals, Core AWS Services</li>
+        <li><strong>Certification:</strong> AWS Certified Cloud Practitioner</li>
+        <li><strong>Core Skills:</strong> Data Analysis, Documentation, Project Management Basics</li>
+      </ul>
+    </section>
+
+    <footer>
+      © 2026 Pushkar Gadipalli
+    </footer>
+
+  </div>
 
 </body>
 </html>
