@@ -4,20 +4,19 @@
   <meta charset="UTF-8">
   <title>Pushkar Gadipalli | Portfolio</title>
 
-  <!-- Google Font -->
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f2f4f7;
+      background: linear-gradient(180deg, #eef2f7, #e6ebf2);
       color: #1f2937;
-      line-height: 1.6;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
       padding: 50px 20px;
     }
@@ -29,14 +28,13 @@
     }
 
     .hero h1 {
-      font-size: 36px;
+      font-size: 38px;
       margin-bottom: 8px;
     }
 
     .hero p {
-      font-size: 16px;
       color: #4b5563;
-      margin: 4px 0;
+      margin: 6px 0;
     }
 
     .hero a {
@@ -48,24 +46,44 @@
 
     /* CARD */
     .card {
-      background: #ffffff;
-      border-radius: 12px;
+      background: white;
+      border-radius: 14px;
       padding: 30px;
-      margin-bottom: 30px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+      margin-bottom: 35px;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.08);
     }
 
     .card h2 {
       margin-top: 0;
-      margin-bottom: 15px;
-      font-size: 22px;
+      margin-bottom: 20px;
+      font-size: 24px;
       border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 8px;
+      padding-bottom: 10px;
     }
 
-    .sub-title {
-      font-weight: 600;
-      margin-top: 20px;
+    /* PROJECT GRID */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #f9fafb;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .project-card p {
+      font-size: 14px;
+      color: #4b5563;
     }
 
     ul {
@@ -91,32 +109,23 @@
 
     <!-- HERO -->
     <div class="hero">
-  <h1>Pushkar Gadipalli</h1>
-  <p>Master’s Student in Information Systems</p>
-  <p>📍 Mount Pleasant, MI</p>
+      <h1>Pushkar Gadipalli</h1>
+      <p>Master’s Student in Information Systems</p>
+      <p>📍 Mount Pleasant, MI</p>
+      <p>
+        <a href="mailto:pushkargadipalli@gmail.com">Email</a> |
+        <a href="https://www.linkedin.com/in/pushkar-gadipalli-267216322/" target="_blank">LinkedIn</a>
+      </p>
 
-  <p>
-    <a href="mailto:pushkargadipalli@gmail.com">Email</a> |
-    <a href="https://www.linkedin.com/in/pushkar-gadipalli-267216322/" target="_blank">LinkedIn</a>
-  </p>
-
-  <p style="margin-top: 15px;">
-    <a href="Pushkar_Gadipalli_Resume.pdf" 
-       style="
-         display: inline-block;
-         padding: 10px 20px;
-         background-color: #2563eb;
-         color: white;
-         border-radius: 6px;
-         text-decoration: none;
-         font-weight: 500;
-       "
-       target="_blank">
-      📄 Download Resume
-    </a>
-  </p>
-</div>
-
+      <p style="margin-top:15px;">
+        <a href="Pushkar_Gadipalli_Resume.pdf"
+           style="background:#2563eb;color:white;padding:10px 22px;
+                  border-radius:8px;text-decoration:none;font-weight:500;"
+           target="_blank">
+          📄 Download Resume
+        </a>
+      </p>
+    </div>
 
     <!-- ABOUT -->
     <div class="card">
@@ -124,26 +133,8 @@
       <p>
         Motivated and dependable professional with a strong foundation in information systems,
         data analysis, and software development. Skilled in problem-solving, collaboration,
-        and delivering high-quality results. Passionate about leveraging technology to drive
-        process improvement and organizational efficiency.
-      </p>
-    </div>
-
-    <!-- EDUCATION -->
-    <div class="card">
-      <h2>Education</h2>
-
-      <p class="sub-title">Central Michigan University</p>
-      <p>
-        Master of Science in Information Systems (MSIS)<br>
-        CGPA: 3.95<br>
-        Aug 2024 – May 2026
-      </p>
-
-      <p class="sub-title">Neil Gogte Institute of Technology, Hyderabad</p>
-      <p>
-        Bachelor of Engineering in Computer Science and Engineering<br>
-        Aug 2019 – June 2023
+        and delivering high-quality results. Passionate about leveraging technology to
+        improve processes and organizational efficiency.
       </p>
     </div>
 
@@ -151,43 +142,57 @@
     <div class="card">
       <h2>Projects</h2>
 
-      <p class="sub-title">Simulation Powered Learning (SPL) SimProject</p>
-      <ul>
-        <li>Led a team of 6 members over an 11-week project duration.</li>
-        <li>Managed task allocation and stakeholder communication.</li>
-        <li><strong>Technology:</strong> SimProject</li>
-      </ul>
+      <div class="project-grid">
 
-      <p class="sub-title">Canteen Automation System</p>
-      <ul>
-        <li>Built a responsive front-end using HTML and CSS.</li>
-        <li>Reduced order completion time to under 2 minutes.</li>
-        <li><strong>Technologies:</strong> HTML, CSS, Python, JSP, Servlets, MySQL</li>
-      </ul>
+        <div class="project-card">
+          <h3>Simulation Powered Learning (SPL) SimProject</h3>
+          <p>
+            Led a team of 6 members over an 11-week simulated project environment.
+            Managed task allocation, stakeholder communication, and timely delivery.
+          </p>
+          <p><strong>Technology:</strong> SimProject</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Canteen Automation System</h3>
+          <p>
+            Designed and implemented a responsive front-end to streamline food ordering.
+            Reduced order completion time to under 2 minutes.
+          </p>
+          <p><strong>Technologies:</strong> HTML, CSS, Python, JSP, Servlets, MySQL</p>
+        </div>
+
+      </div>
     </div>
 
     <!-- EXPERIENCE -->
     <div class="card">
       <h2>Work Experience</h2>
-
-      <p class="sub-title">Research Associate — Sutherland Global Services Pvt. Ltd.</p>
+      <p><strong>Research Associate — Sutherland Global Services Pvt. Ltd.</strong></p>
       <p>Nov 2023 – Jan 2024</p>
       <ul>
         <li>Optimized SQL queries for bulk data uploads.</li>
         <li>Resolved data upload errors and ensured deduplication compliance.</li>
-        <li>Prepared technical documentation for onboarding.</li>
+        <li>Prepared technical documentation to streamline onboarding.</li>
       </ul>
     </div>
 
     <!-- SKILLS -->
     <div class="card">
-      <h2>Skills & Certifications</h2>
+      <h2>Skills</h2>
       <ul>
-        <li><strong>Programming:</strong> Python (NASSCOM Certified), Java (Basics), HTML, CSS, JSP, Servlets</li>
+        <li><strong>Programming:</strong> Python, Java (Basics), HTML, CSS, JSP, Servlets</li>
         <li><strong>Databases & BI:</strong> MySQL, SQL Server, Tableau, Power BI, ETL</li>
-        <li><strong>Business Analysis:</strong> Requirement Gathering, SDLC, Process Improvement</li>
-        <li><strong>Cloud & Certification:</strong> AWS Cloud Fundamentals, AWS Certified Cloud Practitioner</li>
-        <li><strong>Core Skills:</strong> Data Analysis, Documentation, Project Management Basics</li>
+        <li><strong>Business & Systems:</strong> Requirement Gathering, SDLC, Process Improvement</li>
+        <li><strong>Cloud:</strong> AWS Cloud Fundamentals</li>
+      </ul>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="card">
+      <h2>Certifications</h2>
+      <ul>
+        <li>AWS Certified Cloud Practitioner</li>
       </ul>
     </div>
 
