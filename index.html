@@ -3,54 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <title>Pushkar Gadipalli | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      background-color: #f4f6f8;
       margin: 0;
-      padding: 0;
-      color: #2c2c2c;
+      font-family: 'Inter', sans-serif;
+      background-color: #f2f4f7;
+      color: #1f2937;
+      line-height: 1.6;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
 
-    header {
+    /* HERO */
+    .hero {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
-    header h1 {
-      margin-bottom: 5px;
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 8px;
     }
 
-    header p {
-      margin: 5px 0;
-      color: #555;
+    .hero p {
+      font-size: 16px;
+      color: #4b5563;
+      margin: 4px 0;
     }
 
-    header a {
-      color: #0b5ed7;
+    .hero a {
+      color: #2563eb;
       text-decoration: none;
-      margin: 0 8px;
+      margin: 0 10px;
       font-weight: 500;
     }
 
-    section {
-      background: white;
-      padding: 25px;
-      margin-bottom: 25px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    /* CARD */
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.06);
     }
 
-    section h2 {
+    .card h2 {
       margin-top: 0;
-      border-bottom: 2px solid #eee;
+      margin-bottom: 15px;
+      font-size: 22px;
+      border-bottom: 2px solid #e5e7eb;
       padding-bottom: 8px;
+    }
+
+    .sub-title {
+      font-weight: 600;
+      margin-top: 20px;
     }
 
     ul {
@@ -61,16 +76,11 @@
       margin-bottom: 8px;
     }
 
-    .sub-title {
-      font-weight: bold;
-      margin-top: 15px;
-    }
-
     footer {
       text-align: center;
-      color: #777;
+      margin-top: 60px;
       font-size: 14px;
-      margin-top: 40px;
+      color: #6b7280;
     }
   </style>
 </head>
@@ -79,8 +89,8 @@
 
   <div class="container">
 
-    <!-- HEADER -->
-    <header>
+    <!-- HERO -->
+    <div class="hero">
       <h1>Pushkar Gadipalli</h1>
       <p>Master’s Student in Information Systems | Aspiring Data & Systems Analyst</p>
       <p>📍 Mount Pleasant, MI</p>
@@ -88,10 +98,10 @@
         <a href="mailto:pushkargadipalli@gmail.com">Email</a> |
         <a href="https://www.linkedin.com/in/pushkar-gadipalli-267216322/" target="_blank">LinkedIn</a>
       </p>
-    </header>
+    </div>
 
     <!-- ABOUT -->
-    <section>
+    <div class="card">
       <h2>About Me</h2>
       <p>
         Motivated and dependable professional with a strong foundation in information systems,
@@ -99,10 +109,10 @@
         and delivering high-quality results. Passionate about leveraging technology to drive
         process improvement and organizational efficiency.
       </p>
-    </section>
+    </div>
 
     <!-- EDUCATION -->
-    <section>
+    <div class="card">
       <h2>Education</h2>
 
       <p class="sub-title">Central Michigan University</p>
@@ -117,56 +127,51 @@
         Bachelor of Engineering in Computer Science and Engineering<br>
         Aug 2019 – June 2023
       </p>
-    </section>
+    </div>
 
     <!-- PROJECTS -->
-    <section>
+    <div class="card">
       <h2>Projects</h2>
 
       <p class="sub-title">Simulation Powered Learning (SPL) SimProject</p>
       <ul>
-        <li>Led a team of 6 members to complete the project over an 11-week period.</li>
-        <li>Managed task allocation and ensured timely project delivery.</li>
-        <li>Facilitated stakeholder meetings to track progress and align goals.</li>
+        <li>Led a team of 6 members over an 11-week project duration.</li>
+        <li>Managed task allocation and stakeholder communication.</li>
         <li><strong>Technology:</strong> SimProject</li>
       </ul>
 
       <p class="sub-title">Canteen Automation System</p>
       <ul>
-        <li>Designed an intuitive and responsive front-end using HTML and CSS.</li>
-        <li>Enabled users to complete food orders in under 2 minutes.</li>
-        <li>Collaborated in code reviews and optimized system performance.</li>
-        <li>Coordinated team tasks and demonstrated leadership.</li>
+        <li>Built a responsive front-end using HTML and CSS.</li>
+        <li>Reduced order completion time to under 2 minutes.</li>
         <li><strong>Technologies:</strong> HTML, CSS, Python, JSP, Servlets, MySQL</li>
       </ul>
-    </section>
+    </div>
 
     <!-- EXPERIENCE -->
-    <section>
+    <div class="card">
       <h2>Work Experience</h2>
 
       <p class="sub-title">Research Associate — Sutherland Global Services Pvt. Ltd.</p>
       <p>Nov 2023 – Jan 2024</p>
       <ul>
-        <li>Optimized SQL queries for bulk data uploads, improving efficiency.</li>
+        <li>Optimized SQL queries for bulk data uploads.</li>
         <li>Resolved data upload errors and ensured deduplication compliance.</li>
-        <li>Exported and analyzed data using Excel for reporting purposes.</li>
-        <li>Prepared concise technical documentation to streamline onboarding.</li>
+        <li>Prepared technical documentation for onboarding.</li>
       </ul>
-    </section>
+    </div>
 
     <!-- SKILLS -->
-    <section>
+    <div class="card">
       <h2>Skills & Certifications</h2>
       <ul>
         <li><strong>Programming:</strong> Python (NASSCOM Certified), Java (Basics), HTML, CSS, JSP, Servlets</li>
         <li><strong>Databases & BI:</strong> MySQL, SQL Server, Tableau, Power BI, ETL</li>
         <li><strong>Business Analysis:</strong> Requirement Gathering, SDLC, Process Improvement</li>
-        <li><strong>AWS & Cloud:</strong> Cloud Computing Fundamentals, Core AWS Services</li>
-        <li><strong>Certification:</strong> AWS Certified Cloud Practitioner</li>
+        <li><strong>Cloud & Certification:</strong> AWS Cloud Fundamentals, AWS Certified Cloud Practitioner</li>
         <li><strong>Core Skills:</strong> Data Analysis, Documentation, Project Management Basics</li>
       </ul>
-    </section>
+    </div>
 
     <footer>
       © 2026 Pushkar Gadipalli
