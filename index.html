@@ -2,176 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <!-- SEO -->
-  <title>Pushkar Gadipalli | Information Systems Portfolio</title>
-  <meta name="description" content="Pushkar Gadipalli – Master's student in Information Systems. Professional portfolio showcasing projects, skills, certifications, and experience.">
-  <meta name="author" content="Pushkar Gadipalli">
+  <title>Pushkar Gadipalli | Portfolio</title>
+  <meta name="description" content="Pushkar Gadipalli – Information Systems graduate portfolio showcasing projects, education, skills, and certifications.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    :root {
-      --bg-main: linear-gradient(180deg, #0f172a, #020617);
-      --card-bg: #020617;
-      --border: #1e293b;
-      --text-main: #e5e7eb;
-      --text-muted: #cbd5f5;
-      --accent: #38bdf8;
-      --btn: #2563eb;
-      --btn-hover: #1d4ed8;
-    }
-
-    body.light {
-      --bg-main: #f4f6f8;
-      --card-bg: #ffffff;
-      --border: #e5e7eb;
-      --text-main: #111827;
-      --text-muted: #4b5563;
-      --accent: #2563eb;
-      --btn: #2563eb;
-      --btn-hover: #1d4ed8;
-    }
-
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: var(--bg-main);
-      color: var(--text-main);
-      line-height: 1.6;
-      transition: background 0.3s ease, color 0.3s ease;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.7;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: auto;
-      padding: 60px 20px;
+      padding: 80px 20px;
+    }
+
+    h1, h2, h3 {
+      color: #f8fafc;
     }
 
     /* HERO */
     .hero {
       text-align: center;
-      margin-bottom: 70px;
+      margin-bottom: 100px;
     }
 
     .hero h1 {
-      font-size: 40px;
-      margin-bottom: 6px;
+      font-size: 46px;
+      margin-bottom: 10px;
     }
 
     .hero p {
-      margin: 6px 0;
-      color: var(--text-muted);
+      max-width: 800px;
+      margin: 10px auto;
+      font-size: 18px;
+      color: #cbd5f5;
     }
 
-    .hero a {
-      color: var(--accent);
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: 500;
+    .hero-buttons {
+      margin-top: 30px;
     }
 
-    .resume-btn {
+    .btn {
       display: inline-block;
-      margin-top: 18px;
-      padding: 12px 28px;
-      background: var(--btn);
-      color: white;
-      border-radius: 10px;
-      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 30px;
       font-weight: 500;
-      transition: background 0.25s ease, transform 0.25s ease;
+      text-decoration: none;
+      margin: 10px;
     }
 
-    .resume-btn:hover {
-      background: var(--btn-hover);
-      transform: translateY(-2px);
+    .btn-primary {
+      background: #2563eb;
+      color: white;
     }
 
-    .toggle {
-      margin-top: 20px;
-      cursor: pointer;
-      font-size: 14px;
-      color: var(--accent);
+    .btn-secondary {
+      border: 1px solid #475569;
+      color: #e5e7eb;
     }
 
-    /* CARD */
-    .card {
-      background: var(--card-bg);
-      border-radius: 14px;
-      padding: 32px;
-      margin-bottom: 40px;
-      border: 1px solid var(--border);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.5);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    /* SECTIONS */
+    section {
+      margin-bottom: 100px;
     }
 
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 25px 45px rgba(0,0,0,0.6);
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 50px;
     }
 
-    .card h2 {
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-size: 24px;
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 10px;
-    }
-
-    /* PROJECTS */
-    .project-grid {
+    /* CARDS */
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      gap: 30px;
     }
 
-    .project-card {
-      background: var(--card-bg);
-      padding: 22px;
-      border-radius: 12px;
-      border: 1px solid var(--border);
+    .card {
+      background: #020617;
+      padding: 35px;
+      border-radius: 18px;
+      border: 1px solid #1e293b;
     }
 
-    .project-card p {
-      color: var(--text-muted);
+    .card p {
+      color: #cbd5f5;
+      font-size: 15px;
+    }
+
+    /* SKILLS */
+    .skill-group h3 {
+      margin-bottom: 15px;
+    }
+
+    .skill-pill {
+      display: inline-block;
+      background: #1e293b;
+      padding: 8px 16px;
+      border-radius: 20px;
+      margin: 6px;
       font-size: 14px;
     }
 
-    .project-links a {
-      display: inline-block;
-      margin-top: 10px;
-      margin-right: 12px;
-      color: var(--accent);
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    /* CONTACT */
-    .contact a {
-      display: inline-block;
-      margin-right: 15px;
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
+    /* FOOTER */
     footer {
       text-align: center;
-      margin-top: 70px;
+      margin-top: 80px;
       font-size: 14px;
-      color: var(--text-muted);
+      color: #94a3b8;
     }
   </style>
 </head>
@@ -182,144 +128,167 @@
 
   <!-- HERO -->
   <div class="hero">
-    <h1>Pushkar Gadipalli</h1>
-    <p>Master’s Student in Information Systems</p>
-    <p>📍 Mount Pleasant, MI</p>
+    <h1>Hello, I’m Pushkar Gadipalli</h1>
     <p>
-      <a href="mailto:pushkargadipalli@gmail.com">Email</a> |
-      <a href="https://www.linkedin.com/in/pushkar-gadipalli-267216322/" target="_blank">LinkedIn</a>
+      Master’s student in Information Systems with a strong foundation in data analysis,
+      software development, and cloud fundamentals. Experienced in building practical
+      systems, collaborating in team-based environments, and applying technology to solve
+      real-world problems.
     </p>
 
-    <a href="Pushkar_Gadipalli_Resume.pdf" class="resume-btn" target="_blank">
-      📄 Download Resume
-    </a>
-
-    <div class="toggle" onclick="toggleTheme()">🌗 Toggle Light / Dark</div>
-  </div>
-
-  <!-- ABOUT -->
-  <div class="card">
-    <h2>About Me</h2>
-    <p>
-      Motivated and dependable professional with a strong foundation in information systems,
-      data analysis, and software development. Skilled in problem-solving, collaboration,
-      and delivering high-quality results. Passionate about leveraging technology to improve
-      organizational efficiency.
-    </p>
-  </div>
-
-  <!-- PROJECTS -->
-  <div class="card">
-    <h2>Projects</h2>
-    <div class="project-grid">
-
-      <div class="project-card">
-        <h3>Simulation Powered Learning (SPL) SimProject</h3>
-
-        <p>
-          This project simulated a real-world corporate project environment where teams were
-          required to plan, execute, and deliver tasks under strict time and resource constraints.
-        </p>
-
-        <p>
-          I led a team of 6 members over an 11-week period, where I was responsible for assigning
-          tasks, tracking progress, and ensuring milestones were met on schedule. I also
-          coordinated stakeholder meetings to communicate project status, identify risks, and
-          align deliverables with project objectives.
-        </p>
-
-        <p>
-          This experience strengthened my skills in project coordination, stakeholder
-          communication, and decision-making in a structured project environment.
-        </p>
-
-        <p><strong>Technology:</strong> SimProject</p>
-
-        <div class="project-links">
-          <a href="#">📘 Project Overview</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <h3>Canteen Automation System</h3>
-
-        <p>
-          The objective of this project was to automate the food ordering process in a canteen
-          environment to reduce manual delays and improve overall user experience.
-        </p>
-
-        <p>
-          I worked on designing and developing a responsive front-end using HTML and CSS,
-          ensuring the application was easy to use across different devices. The improved
-          interface allowed customers to complete their orders in under 2 minutes.
-        </p>
-
-        <p>
-          I collaborated with team members during development, participated in code reviews,
-          and contributed to optimizing the usability and performance of the system.
-        </p>
-
-        <p><strong>Technologies:</strong> HTML, CSS, Python, JSP, Servlets, MySQL</p>
-
-        <div class="project-links">
-          <a href="#">📄 Project Details</a>
-        </div>
-      </div>
-
+    <div class="hero-buttons">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-secondary">Contact Me</a>
     </div>
   </div>
 
-  <!-- EXPERIENCE -->
-  <div class="card">
-    <h2>Work Experience</h2>
-    <p><strong>Research Associate — Sutherland Global Services Pvt. Ltd.</strong></p>
-    <p>Nov 2023 – Jan 2024</p>
-    <ul>
-      <li>Optimized SQL queries for bulk data uploads.</li>
-      <li>Resolved data upload errors and ensured deduplication compliance.</li>
-      <li>Prepared technical documentation to streamline onboarding.</li>
-    </ul>
-  </div>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Simulation Powered Learning (SPL) SimProject</h3>
+        <p>
+          This project simulated a real-world corporate project environment, requiring teams
+          to plan, execute, and deliver tasks under defined timelines and constraints.
+        </p>
+        <p>
+          I led a team of six members over an eleven-week period. My responsibilities included
+          assigning tasks, monitoring progress, coordinating meetings, and ensuring that project
+          milestones were met on schedule. I also handled stakeholder communication by reporting
+          project status, identifying risks, and aligning deliverables with expectations.
+        </p>
+        <p>
+          This experience strengthened my leadership, project coordination, and communication
+          skills while providing hands-on exposure to structured project management practices.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Canteen Automation System</h3>
+        <p>
+          The goal of this project was to automate the food ordering process in a canteen
+          environment to reduce manual delays and improve overall efficiency.
+        </p>
+        <p>
+          I worked on designing and developing a responsive front-end using HTML and CSS,
+          ensuring a smooth and intuitive user experience across devices. The improved interface
+          allowed users to complete food orders in under two minutes.
+        </p>
+        <p>
+          I collaborated closely with team members during development, participated in testing,
+          and contributed to improving usability and performance.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2 class="section-title">Education</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Master of Science in Information Systems</h3>
+        <p><strong>Central Michigan University</strong> (2024 – 2026)</p>
+        <p>
+          Coursework focused on data management, business analytics, systems analysis,
+          and enterprise technologies. Gained hands-on experience with databases,
+          visualization tools, and system design concepts.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Bachelor of Engineering in Computer Science and Engineering</h3>
+        <p><strong>Neil Gogte Institute of Technology</strong> (2019 – 2023)</p>
+        <p>
+          Built a strong foundation in programming, data structures, databases,
+          operating systems, and software engineering through academic coursework
+          and practical projects.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <!-- SKILLS -->
-  <div class="card">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Programming:</strong> Python, Java (Basics), HTML, CSS, JSP, Servlets</li>
-      <li><strong>Databases & BI:</strong> MySQL, SQL Server, Tableau, Power BI, ETL</li>
-      <li><strong>Business & Systems:</strong> Requirement Gathering, SDLC, Process Improvement</li>
-      <li><strong>Cloud:</strong> AWS Cloud Fundamentals</li>
-    </ul>
-  </div>
+  <section>
+    <h2 class="section-title">Skills & Expertise</h2>
+
+    <div class="grid">
+
+      <div class="card skill-group">
+        <h3>Programming & Web</h3>
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">Java (Basics)</span>
+        <span class="skill-pill">HTML</span>
+        <span class="skill-pill">CSS</span>
+        <span class="skill-pill">JSP</span>
+        <span class="skill-pill">Servlets</span>
+      </div>
+
+      <div class="card skill-group">
+        <h3>Databases & BI</h3>
+        <span class="skill-pill">MySQL</span>
+        <span class="skill-pill">SQL Server</span>
+        <span class="skill-pill">Tableau</span>
+        <span class="skill-pill">Power BI</span>
+        <span class="skill-pill">ETL</span>
+      </div>
+
+      <div class="card skill-group">
+        <h3>Business & Systems</h3>
+        <span class="skill-pill">SDLC</span>
+        <span class="skill-pill">Requirement Gathering</span>
+        <span class="skill-pill">Process Improvement</span>
+      </div>
+
+      <div class="card skill-group">
+        <h3>Cloud</h3>
+        <span class="skill-pill">AWS Cloud Fundamentals</span>
+      </div>
+
+    </div>
+  </section>
 
   <!-- CERTIFICATIONS -->
-  <div class="card">
-    <h2>Certifications</h2>
-    <ul>
-      <li>AWS Certified Cloud Practitioner</li>
-    </ul>
-  </div>
+  <section>
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>AWS Certified Cloud Practitioner</h3>
+        <p>
+          Demonstrated foundational knowledge of AWS cloud concepts, services,
+          security, pricing, and architectural best practices.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <!-- CONTACT -->
-  <div class="card contact">
-    <h2>Contact</h2>
-    <p>Feel free to reach out:</p>
-    <a href="mailto:pushkargadipalli@gmail.com">📧 Email</a>
-    <a href="https://www.linkedin.com/in/pushkar-gadipalli-267216322/" target="_blank">🔗 LinkedIn</a>
-    <a href="https://github.com/pushkargadipalli-rgb" target="_blank">💻 GitHub</a>
-  </div>
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="grid">
+      <div class="card">
+        <p>📍 Mount Pleasant, MI</p>
+        <p>📧 pushkargadipalli@gmail.com</p>
+        <p>
+          🔗 <a href="https://www.linkedin.com/in/pushkar-gadipalli-267216322/" style="color:#38bdf8;">LinkedIn</a><br>
+          💻 <a href="https://github.com/pushkargadipalli-rgb" style="color:#38bdf8;">GitHub</a>
+        </p>
+      </div>
+    </div>
+  </section>
 
   <footer>
     © 2026 Pushkar Gadipalli
   </footer>
 
 </div>
-
-<script>
-  function toggleTheme() {
-    document.body.classList.toggle("light");
-  }
-</script>
 
 </body>
 </html>
