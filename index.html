@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pushkar Gadipalli | Portfolio</title>
-  <meta name="description" content="Pushkar Gadipalli – Information Systems graduate portfolio showcasing projects, education, skills, and certifications.">
+  <title>Pushkar Gadipalli | Information Systems Portfolio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Pushkar Gadipalli – Master's student in Information Systems specializing in Business Data Analytics and Project Management.">
+  <meta name="author" content="Pushkar Gadipalli">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #0f172a;
+      background: linear-gradient(180deg, #0f172a, #020617);
       color: #e5e7eb;
       line-height: 1.7;
     }
@@ -39,47 +43,48 @@
     }
 
     .hero p {
-      max-width: 800px;
+      max-width: 850px;
       margin: 10px auto;
       font-size: 18px;
       color: #cbd5f5;
     }
 
-    .hero-buttons {
-      margin-top: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 32px;
-      border-radius: 30px;
-      font-weight: 500;
+    .hero-links a {
+      color: #38bdf8;
       text-decoration: none;
-      margin: 10px;
+      margin: 0 12px;
+      font-weight: 500;
     }
 
-    .btn-primary {
+    .resume-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 32px;
       background: #2563eb;
       color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.25s ease, transform 0.25s ease;
     }
 
-    .btn-secondary {
-      border: 1px solid #475569;
-      color: #e5e7eb;
+    .resume-btn:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
     }
 
     /* SECTIONS */
     section {
-      margin-bottom: 100px;
+      margin-bottom: 110px;
     }
 
     .section-title {
       text-align: center;
       font-size: 36px;
-      margin-bottom: 50px;
+      margin-bottom: 55px;
     }
 
-    /* CARDS */
+    /* GRID & CARDS */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -88,9 +93,16 @@
 
     .card {
       background: #020617;
-      padding: 35px;
+      padding: 38px;
       border-radius: 18px;
       border: 1px solid #1e293b;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.55);
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 45px rgba(0,0,0,0.7);
     }
 
     .card p {
@@ -99,10 +111,6 @@
     }
 
     /* SKILLS */
-    .skill-group h3 {
-      margin-bottom: 15px;
-    }
-
     .skill-pill {
       display: inline-block;
       background: #1e293b;
@@ -112,7 +120,6 @@
       font-size: 14px;
     }
 
-    /* FOOTER */
     footer {
       text-align: center;
       margin-top: 80px;
@@ -130,20 +137,25 @@
   <div class="hero">
     <h1>Hello, I’m Pushkar Gadipalli</h1>
     <p>
-      Master’s student in Information Systems with a strong foundation in data analysis,
-      software development, and cloud fundamentals. Experienced in building practical
-      systems, collaborating in team-based environments, and applying technology to solve
-      real-world problems.
+      Master’s student in <strong>Information Systems</strong> with a strong focus on
+      <strong>Business Data Analytics</strong> and <strong>Project Management</strong>.
+      Experienced in analyzing business data, building dashboards, managing projects,
+      and collaborating in team-based environments to deliver technology-driven solutions.
     </p>
 
-    <div class="hero-buttons">
-      <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="#contact" class="btn btn-secondary">Contact Me</a>
+    <div class="hero-links">
+      <a href="mailto:pushkargadipalli@gmail.com">Email</a> |
+      <a href="https://www.linkedin.com/in/pushkar-gadipalli-267216322/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/pushkargadipalli-rgb" target="_blank">GitHub</a>
     </div>
+
+    <a href="Pushkar_Gadipalli_Resume.pdf" class="resume-btn" target="_blank">
+      📄 Download Resume
+    </a>
   </div>
 
   <!-- PROJECTS -->
-  <section id="projects">
+  <section>
     <h2 class="section-title">Projects</h2>
 
     <div class="grid">
@@ -151,35 +163,36 @@
       <div class="card">
         <h3>Simulation Powered Learning (SPL) SimProject</h3>
         <p>
-          This project simulated a real-world corporate project environment, requiring teams
-          to plan, execute, and deliver tasks under defined timelines and constraints.
+          This project simulated a real-world enterprise project environment where teams
+          were required to plan, execute, and deliver business objectives under defined
+          timelines, budgets, and resource constraints.
         </p>
         <p>
-          I led a team of six members over an eleven-week period. My responsibilities included
-          assigning tasks, monitoring progress, coordinating meetings, and ensuring that project
-          milestones were met on schedule. I also handled stakeholder communication by reporting
-          project status, identifying risks, and aligning deliverables with expectations.
+          I led a team of six members over an eleven-week period, where I was responsible
+          for project planning, task allocation, progress tracking, and milestone delivery.
+          I coordinated stakeholder meetings to present project updates, manage risks,
+          and ensure alignment with business requirements.
         </p>
         <p>
-          This experience strengthened my leadership, project coordination, and communication
-          skills while providing hands-on exposure to structured project management practices.
+          This project strengthened my project management, leadership, communication,
+          and decision-making skills within a structured project lifecycle.
         </p>
       </div>
 
       <div class="card">
         <h3>Canteen Automation System</h3>
         <p>
-          The goal of this project was to automate the food ordering process in a canteen
-          environment to reduce manual delays and improve overall efficiency.
+          The objective of this project was to design and develop a system that automated
+          the food ordering process to improve operational efficiency and customer experience.
         </p>
         <p>
-          I worked on designing and developing a responsive front-end using HTML and CSS,
-          ensuring a smooth and intuitive user experience across devices. The improved interface
-          allowed users to complete food orders in under two minutes.
+          I focused on designing a responsive front-end using HTML and CSS and collaborated
+          with the backend team to integrate business logic and database functionality.
+          The solution reduced order processing time to under two minutes.
         </p>
         <p>
-          I collaborated closely with team members during development, participated in testing,
-          and contributed to improving usability and performance.
+          This project provided hands-on experience in systems analysis, UI design,
+          data handling, and collaborative software development.
         </p>
       </div>
 
@@ -191,25 +204,30 @@
     <h2 class="section-title">Education</h2>
 
     <div class="grid">
+
       <div class="card">
-        <h3>Master of Science in Information Systems</h3>
-        <p><strong>Central Michigan University</strong> (2024 – 2026)</p>
+        <h3>Master of Science in Information Systems (MSIS)</h3>
+        <p><strong>Central Michigan University</strong></p>
+        <p>Aug 2024 – May 2026 | CGPA: 3.95</p>
         <p>
-          Coursework focused on data management, business analytics, systems analysis,
-          and enterprise technologies. Gained hands-on experience with databases,
-          visualization tools, and system design concepts.
+          Coursework primarily focused on <strong>Business Data Analytics</strong>,
+          <strong>Project Management</strong>, systems analysis, database management,
+          and business intelligence. Gained hands-on experience with data visualization,
+          SQL-based analytics, ETL concepts, and managing technology-driven business projects.
         </p>
       </div>
 
       <div class="card">
         <h3>Bachelor of Engineering in Computer Science and Engineering</h3>
-        <p><strong>Neil Gogte Institute of Technology</strong> (2019 – 2023)</p>
+        <p><strong>Neil Gogte Institute of Technology, Hyderabad</strong></p>
+        <p>Aug 2019 – Jun 2023</p>
         <p>
           Built a strong foundation in programming, data structures, databases,
           operating systems, and software engineering through academic coursework
           and practical projects.
         </p>
       </div>
+
     </div>
   </section>
 
@@ -219,8 +237,19 @@
 
     <div class="grid">
 
-      <div class="card skill-group">
-        <h3>Programming & Web</h3>
+      <div class="card">
+        <h3>Business Data Analytics</h3>
+        <span class="skill-pill">SQL</span>
+        <span class="skill-pill">MySQL</span>
+        <span class="skill-pill">SQL Server</span>
+        <span class="skill-pill">Tableau</span>
+        <span class="skill-pill">Power BI</span>
+        <span class="skill-pill">ETL</span>
+        <span class="skill-pill">Data Visualization</span>
+      </div>
+
+      <div class="card">
+        <h3>Programming & Web Technologies</h3>
         <span class="skill-pill">Python</span>
         <span class="skill-pill">Java (Basics)</span>
         <span class="skill-pill">HTML</span>
@@ -229,25 +258,20 @@
         <span class="skill-pill">Servlets</span>
       </div>
 
-      <div class="card skill-group">
-        <h3>Databases & BI</h3>
-        <span class="skill-pill">MySQL</span>
-        <span class="skill-pill">SQL Server</span>
-        <span class="skill-pill">Tableau</span>
-        <span class="skill-pill">Power BI</span>
-        <span class="skill-pill">ETL</span>
-      </div>
-
-      <div class="card skill-group">
-        <h3>Business & Systems</h3>
+      <div class="card">
+        <h3>Project Management & Systems</h3>
         <span class="skill-pill">SDLC</span>
         <span class="skill-pill">Requirement Gathering</span>
+        <span class="skill-pill">Stakeholder Communication</span>
         <span class="skill-pill">Process Improvement</span>
+        <span class="skill-pill">Project Planning</span>
       </div>
 
-      <div class="card skill-group">
-        <h3>Cloud</h3>
+      <div class="card">
+        <h3>Cloud & Tools</h3>
         <span class="skill-pill">AWS Cloud Fundamentals</span>
+        <span class="skill-pill">Git</span>
+        <span class="skill-pill">GitHub</span>
       </div>
 
     </div>
@@ -261,15 +285,15 @@
       <div class="card">
         <h3>AWS Certified Cloud Practitioner</h3>
         <p>
-          Demonstrated foundational knowledge of AWS cloud concepts, services,
-          security, pricing, and architectural best practices.
+          Demonstrated foundational knowledge of AWS cloud concepts, core services,
+          security, pricing models, and architectural best practices.
         </p>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
+  <section>
     <h2 class="section-title">Contact</h2>
 
     <div class="grid">
