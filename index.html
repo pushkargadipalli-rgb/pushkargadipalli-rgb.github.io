@@ -1,367 +1,220 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pushkar Gadipalli | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pushkar Gadipalli portfolio - Information Systems graduate student skilled in Python, SQL, Power BI, Tableau, and data analytics.">
+<meta charset="UTF-8">
+<title>Pushkar Gadipalli | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#0f172a;
+  color:#e2e8f0;
+}
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+.container {
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
+}
 
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-      line-height: 1.6;
-    }
+h1,h2,h3 {
+  color:#f8fafc;
+}
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 60px 20px;
-    }
+/* ✅ REMOVED SEPARATOR LINE HERE */
+h2 {
+  padding-bottom:10px;
+}
 
-    .hero {
-      text-align: center;
-      padding: 40px 0 70px;
-    }
+.hero {
+  text-align:center;
+  margin-bottom:70px;
+}
 
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 16px;
-      color: #f8fafc;
-    }
+.hero h1 {
+  font-size:48px;
+}
 
-    .hero p {
-      max-width: 850px;
-      margin: 0 auto 22px;
-      font-size: 20px;
-      color: #cbd5e1;
-    }
+.hero p {
+  max-width:800px;
+  margin:auto;
+  font-size:20px;
+  color:#cbd5e1;
+}
 
-    .links {
-      margin: 20px 0;
-    }
+.links a {
+  color:#38bdf8;
+  text-decoration:none;
+  margin:0 10px;
+}
 
-    .links a {
-      color: #38bdf8;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: 500;
-    }
+.resume-btn {
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 28px;
+  background:#2563eb;
+  color:white;
+  border-radius:10px;
+  text-decoration:none;
+}
 
-    .resume-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 14px 28px;
-      background: #2563eb;
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: 600;
-    }
+section {
+  margin-bottom:60px;
+}
 
-    .resume-btn:hover {
-      background: #1d4ed8;
-    }
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:20px;
+}
 
-    section {
-      margin-bottom: 70px;
-    }
+.card {
+  background:#111c34;
+  padding:20px;
+  border-radius:12px;
+}
 
-    h2 {
-      font-size: 32px;
-      color: #f8fafc;
-      margin-bottom: 24px;
-      border-bottom: 2px solid #1e293b;
-      padding-bottom: 10px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 22px;
-    }
-
-    .card {
-      background: #111c34;
-      border: 1px solid #1e293b;
-      border-radius: 14px;
-      padding: 24px;
-    }
-
-    .card h3 {
-      margin-top: 0;
-      margin-bottom: 14px;
-      color: #f8fafc;
-      font-size: 24px;
-    }
-
-    .card p {
-      margin-bottom: 12px;
-      color: #cbd5e1;
-    }
-
-    .project-link {
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .edu-item, .exp-item {
-      background: #111c34;
-      border: 1px solid #1e293b;
-      border-radius: 14px;
-      padding: 22px;
-      margin-bottom: 18px;
-    }
-
-    .edu-item h3, .exp-item h3 {
-      margin: 0 0 8px;
-      color: #f8fafc;
-      font-size: 22px;
-    }
-
-    .subtext {
-      color: #94a3b8;
-      font-size: 15px;
-      margin-bottom: 10px;
-    }
-
-    .skills-group {
-      background: #111c34;
-      border: 1px solid #1e293b;
-      border-radius: 14px;
-      padding: 22px;
-      margin-bottom: 18px;
-    }
-
-    .skills-group h3 {
-      margin-top: 0;
-      color: #f8fafc;
-      font-size: 22px;
-      margin-bottom: 12px;
-    }
-
-    .pill {
-      display: inline-block;
-      background: #1e293b;
-      color: #e2e8f0;
-      padding: 8px 14px;
-      border-radius: 999px;
-      margin: 6px 6px 0 0;
-      font-size: 14px;
-    }
-
-    .contact-box {
-      background: #111c34;
-      border: 1px solid #1e293b;
-      border-radius: 14px;
-      padding: 24px;
-    }
-
-    .contact-box a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      color: #94a3b8;
-      font-size: 14px;
-      padding-top: 20px;
-      border-top: 1px solid #1e293b;
-    }
-
-    @media (max-width: 700px) {
-      .hero h1 {
-        font-size: 36px;
-      }
-
-      .hero p {
-        font-size: 18px;
-      }
-
-      h2 {
-        font-size: 28px;
-      }
-    }
-  </style>
-
+.pill {
+  display:inline-block;
+  background:#1e293b;
+  padding:6px 12px;
+  margin:5px;
+  border-radius:20px;
+  font-size:14px;
+}
+</style>
 </head>
+
 <body>
 
-  <div class="container">
+<div class="container">
 
-```
-<section class="hero">
-  <h1>Hello, I’m Pushkar Gadipalli</h1>
-  <p>
-    Master’s student in <strong>Information Systems</strong> with strong skills in
-    <strong>data analysis, SQL, and business intelligence</strong>. Experienced in
-    <strong>Python, Power BI, and Tableau</strong> for building data-driven solutions,
-    dashboards, and business insights.
-  </p>
+<div class="hero">
+<h1>Hello, I’m Pushkar Gadipalli</h1>
 
-  <div class="links">
-    <a href="mailto:pushkargadipalli@gmail.com">Email</a> |
-    <a href="https://www.linkedin.com/in/pushkar-gadipalli-267216322/" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/pushkargadipalli-rgb" target="_blank">GitHub</a>
-  </div>
+<p>
+Master’s student in Information Systems with strong skills in data analysis, SQL, and business intelligence.
+Experienced in Python, Power BI, and Tableau for building dashboards and delivering business insights.
+</p>
 
-  <a href="Resume.pdf" class="resume-btn" target="_blank">Download Resume</a>
+<div class="links">
+<a href="mailto:pushkargadipalli@gmail.com">Email</a> |
+<a href="https://www.linkedin.com/in/pushkar-gadipalli-267216322/" target="_blank">LinkedIn</a> |
+<a href="https://github.com/pushkargadipalli-rgb" target="_blank">GitHub</a>
+</div>
+
+<a href="https://pushkargadipalli-rgb.github.io/Resume.pdf" class="resume-btn" target="_blank">
+Download Resume
+</a>
+
+</div>
+
+<section>
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Sales Analytics Project (Python + Power BI)</h3>
+<p>Analyzed sales data using Python to identify trends across categories, regions, and customer segments.</p>
+<p>Built Power BI dashboard to track KPIs like sales, profit, and quantity.</p>
+<p>Identified key insights including impact of discounts on profitability and top-performing categories.</p>
+<p>
+<a href="https://github.com/pushkargadipalli-rgb/sales-analytics-project" style="color:#38bdf8;">
+View Project
+</a>
+</p>
+</div>
+
+<div class="card">
+<h3>Canteen Automation System</h3>
+<p>Developed a transactional web-based system to improve food ordering efficiency.</p>
+<p>Integrated MySQL database and improved workflow accuracy through testing and documentation.</p>
+</div>
+
+</div>
 </section>
 
 <section>
-  <h2>Projects</h2>
+<h2>Education</h2>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Sales Analytics Project (Python + Power BI)</h3>
-      <p>
-        Analyzed sales data using Python to identify trends across categories, regions,
-        and customer segments.
-      </p>
-      <p>
-        Built an interactive Power BI dashboard to visualize KPIs such as sales, profit,
-        and quantity.
-      </p>
-      <p>
-        Identified key insights including top-performing categories and the impact of
-        discounts on profitability, and provided recommendations to improve business performance.
-      </p>
-      <p>
-        <a class="project-link" href="https://github.com/pushkargadipalli-rgb/sales-analytics-project" target="_blank">View Project on GitHub</a>
-      </p>
-    </div>
+<div class="card">
+<h3>MS in Information Systems</h3>
+<p>Central Michigan University | 2024–2026 | CGPA: 3.94</p>
+</div>
 
-    <div class="card">
-      <h3>Canteen Automation System</h3>
-      <p>
-        Developed and supported a web-based transactional system used for daily business operations.
-      </p>
-      <p>
-        Assisted with backend database integration using MySQL and supported system workflows and data accuracy.
-      </p>
-      <p>
-        Contributed to testing, documentation, and usability improvements while collaborating with the team.
-      </p>
-    </div>
-  </div>
+<div class="card">
+<h3>B.E. Computer Science</h3>
+<p>Neil Gogte Institute of Technology | 2019–2023</p>
+</div>
+
 </section>
 
 <section>
-  <h2>Education</h2>
+<h2>Experience</h2>
 
-  <div class="edu-item">
-    <h3>Central Michigan University</h3>
-    <div class="subtext">Master of Science in Information Systems (MSIS) | Aug 2024 – May 2026 | CGPA: 3.94</div>
-  </div>
+<div class="card">
+<h3>Research Associate – Sutherland</h3>
+<p>Nov 2023 – Jan 2024</p>
 
-  <div class="edu-item">
-    <h3>Neil Gogte Institute of Technology, Hyderabad, India</h3>
-    <div class="subtext">Bachelor of Engineering in Computer Science and Engineering | Aug 2019 – Jun 2023</div>
-  </div>
+<p>Processed and validated large datasets to support business operations and reporting.</p>
+<p>Optimized SQL queries to improve performance and ensure accurate data handling.</p>
+<p>Built Excel-based reports to support business decision-making and performance tracking.</p>
+<p>Collaborated with teams to improve workflows and maintain data accuracy across systems.</p>
+
+</div>
 </section>
 
 <section>
-  <h2>Experience</h2>
+<h2>Skills</h2>
 
-  <div class="exp-item">
-    <h3>Research Associate – Sutherland Global Services Pvt. Ltd.</h3>
-    <div class="subtext">Nov 2023 – Jan 2024</div>
-    <p>
-      Supported production data operations by validating, processing, and maintaining large datasets.
-      Optimized SQL queries, prepared structured reports in Excel, and documented workflows to improve
-      operational consistency.
-    </p>
-  </div>
+<div class="card">
+<h3>Technical Skills</h3>
+<span class="pill">Python</span>
+<span class="pill">SQL</span>
+<span class="pill">Power BI</span>
+<span class="pill">Tableau</span>
+<span class="pill">Excel</span>
+<span class="pill">Pandas</span>
+<span class="pill">Matplotlib</span>
+</div>
+
+<div class="card">
+<h3>Databases & Tools</h3>
+<span class="pill">MySQL</span>
+<span class="pill">SQL Server</span>
+<span class="pill">Git</span>
+<span class="pill">GitHub</span>
+<span class="pill">AWS</span>
+</div>
+
+<div class="card">
+<h3>Coursework</h3>
+<span class="pill">Information Systems</span>
+<span class="pill">Database Management</span>
+<span class="pill">Business Analytics</span>
+<span class="pill">Project Management</span>
+<span class="pill">Systems Analysis & Design</span>
+</div>
+
 </section>
 
 <section>
-  <h2>Skills</h2>
+<h2>Contact</h2>
 
-  <div class="skills-group">
-    <h3>Programming & Querying</h3>
-    <span class="pill">Python</span>
-    <span class="pill">SQL</span>
-    <span class="pill">R (Basic)</span>
-    <span class="pill">Java (Basic)</span>
-    <span class="pill">HTML</span>
-    <span class="pill">CSS</span>
-    <span class="pill">JSP</span>
-    <span class="pill">Servlets</span>
-  </div>
+<div class="card">
+<p>📍 Mount Pleasant, MI</p>
+<p>📧 pushkargadipalli@gmail.com</p>
+<p>🔗 <a href="https://www.linkedin.com/in/pushkar-gadipalli-267216322/">LinkedIn</a></p>
+<p>💻 <a href="https://github.com/pushkargadipalli-rgb">GitHub</a></p>
+</div>
 
-  <div class="skills-group">
-    <h3>Data Analysis & Visualization</h3>
-    <span class="pill">Power BI</span>
-    <span class="pill">Tableau</span>
-    <span class="pill">Excel</span>
-    <span class="pill">Pandas</span>
-    <span class="pill">Matplotlib</span>
-    <span class="pill">Seaborn</span>
-  </div>
-
-  <div class="skills-group">
-    <h3>Databases & Concepts</h3>
-    <span class="pill">MySQL</span>
-    <span class="pill">SQL Server</span>
-    <span class="pill">Data Analysis</span>
-    <span class="pill">Data Cleaning</span>
-    <span class="pill">ETL</span>
-    <span class="pill">Data Modeling</span>
-    <span class="pill">Statistical Analysis</span>
-  </div>
-
-  <div class="skills-group">
-    <h3>Tools & Applications</h3>
-    <span class="pill">Microsoft Excel</span>
-    <span class="pill">Word</span>
-    <span class="pill">PowerPoint</span>
-    <span class="pill">Outlook</span>
-    <span class="pill">Git</span>
-    <span class="pill">GitHub</span>
-    <span class="pill">AWS</span>
-  </div>
 </section>
 
-<section>
-  <h2>Certification</h2>
-
-  <div class="card">
-    <h3>AWS Certified Cloud Practitioner</h3>
-    <p>
-      Demonstrated foundational knowledge of AWS cloud concepts, core services, security,
-      pricing models, and architectural best practices.
-    </p>
-  </div>
-</section>
-
-<section>
-  <h2>Contact</h2>
-
-  <div class="contact-box">
-    <p>📍 Mount Pleasant, MI</p>
-    <p>📧 <a href="mailto:pushkargadipalli@gmail.com">pushkargadipalli@gmail.com</a></p>
-    <p>🔗 <a href="https://www.linkedin.com/in/pushkar-gadipalli-267216322/" target="_blank">LinkedIn</a></p>
-    <p>💻 <a href="https://github.com/pushkargadipalli-rgb" target="_blank">GitHub</a></p>
-  </div>
-</section>
-
-<footer>
-  © 2026 Pushkar Gadipalli
-</footer>
-```
-
-  </div>
+</div>
 
 </body>
 </html>
