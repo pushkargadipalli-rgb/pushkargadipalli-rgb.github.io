@@ -4,87 +4,25 @@
 <meta charset="UTF-8">
 <title>Pushkar Gadipalli | Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-  margin:0;
-  font-family:'Inter',sans-serif;
-  background:#0f172a;
-  color:#e2e8f0;
-}
-
-.container {
-  max-width:1100px;
-  margin:auto;
-  padding:60px 20px;
-}
-
-h1,h2,h3 {
-  color:#f8fafc;
-}
-
-/* ✅ REMOVED SEPARATOR LINE HERE */
-h2 {
-  padding-bottom:10px;
-}
-
-.hero {
-  text-align:center;
-  margin-bottom:70px;
-}
-
-.hero h1 {
-  font-size:48px;
-}
-
-.hero p {
-  max-width:800px;
-  margin:auto;
-  font-size:20px;
-  color:#cbd5e1;
-}
-
-.links a {
-  color:#38bdf8;
-  text-decoration:none;
-  margin:0 10px;
-}
-
-.resume-btn {
-  display:inline-block;
-  margin-top:20px;
-  padding:14px 28px;
-  background:#2563eb;
-  color:white;
-  border-radius:10px;
-  text-decoration:none;
-}
-
-section {
-  margin-bottom:60px;
-}
-
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:20px;
-}
-
-.card {
-  background:#111c34;
-  padding:20px;
-  border-radius:12px;
-}
-
-.pill {
-  display:inline-block;
-  background:#1e293b;
-  padding:6px 12px;
-  margin:5px;
-  border-radius:20px;
-  font-size:14px;
-}
+body {margin:0;font-family:'Inter',sans-serif;background:#0f172a;color:#e2e8f0;}
+.container {max-width:1100px;margin:auto;padding:60px 20px;}
+h1,h2,h3 {color:#f8fafc;}
+h2 {padding-bottom:10px;}
+.hero {text-align:center;margin-bottom:70px;}
+.hero h1 {font-size:48px;}
+.hero p {max-width:800px;margin:auto;font-size:20px;color:#cbd5e1;}
+.links a {color:white;text-decoration:none;margin:0 10px;font-weight:500;}
+.resume-btn {display:inline-block;margin-top:20px;padding:14px 28px;background:#2563eb;color:white;border-radius:10px;text-decoration:none;}
+section {margin-bottom:60px;}
+.grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;}
+.card {background:#111c34;padding:20px;border-radius:12px;}
+.pill {display:inline-block;background:#1e293b;padding:6px 12px;margin:5px;border-radius:20px;font-size:14px;}
+.card a {color:white;text-decoration:none;}
+ul {padding-left:18px;}
 </style>
 </head>
 
@@ -106,7 +44,8 @@ Experienced in Python, Power BI, and Tableau for building dashboards and deliver
 <a href="https://github.com/pushkargadipalli-rgb" target="_blank">GitHub</a>
 </div>
 
-<a href="https://pushkargadipalli-rgb.github.io/Resume.pdf" class="resume-btn" target="_blank">
+<!-- ✅ FIXED RESUME -->
+<a href="Resume.pdf" class="resume-btn" target="_blank">
 Download Resume
 </a>
 
@@ -120,19 +59,24 @@ Download Resume
 <div class="card">
 <h3>Sales Analytics Project (Python + Power BI)</h3>
 <p>Analyzed sales data using Python to identify trends across categories, regions, and customer segments.</p>
-<p>Built Power BI dashboard to track KPIs like sales, profit, and quantity.</p>
-<p>Identified key insights including impact of discounts on profitability and top-performing categories.</p>
-<p>
-<a href="https://github.com/pushkargadipalli-rgb/sales-analytics-project" style="color:#38bdf8;">
-View Project
-</a>
-</p>
+<p>Developed an interactive Power BI dashboard to track KPIs such as sales, profit, and quantity.</p>
+<ul>
+<li>Identified top-performing categories and regions driving revenue growth</li>
+<li>Analyzed impact of discount strategies on profitability</li>
+<li>Provided actionable insights to improve business performance</li>
+</ul>
+<p><a href="https://github.com/pushkargadipalli-rgb/sales-analytics-project" target="_blank">View Project</a></p>
 </div>
 
 <div class="card">
 <h3>Canteen Automation System</h3>
-<p>Developed a transactional web-based system to improve food ordering efficiency.</p>
-<p>Integrated MySQL database and improved workflow accuracy through testing and documentation.</p>
+<p>Developed a web-based system to streamline food ordering and reduce manual processing.</p>
+<ul>
+<li>Designed and implemented backend database using MySQL</li>
+<li>Improved order processing efficiency and reduced wait time</li>
+<li>Enhanced data accuracy and system usability through testing and validation</li>
+<li>Collaborated with team members to improve system functionality and user experience</li>
+</ul>
 </div>
 
 </div>
@@ -160,10 +104,13 @@ View Project
 <h3>Research Associate – Sutherland</h3>
 <p>Nov 2023 – Jan 2024</p>
 
-<p>Processed and validated large datasets to support business operations and reporting.</p>
-<p>Optimized SQL queries to improve performance and ensure accurate data handling.</p>
-<p>Built Excel-based reports to support business decision-making and performance tracking.</p>
-<p>Collaborated with teams to improve workflows and maintain data accuracy across systems.</p>
+<ul>
+<li>Processed and validated large datasets to support business operations</li>
+<li>Optimized SQL queries to improve performance and ensure accurate data handling</li>
+<li>Created Excel reports to support business decision-making</li>
+<li>Collaborated with cross-functional teams to improve workflows</li>
+<li>Maintained high data accuracy and ensured consistency across systems</li>
+</ul>
 
 </div>
 </section>
@@ -208,8 +155,8 @@ View Project
 <div class="card">
 <p>📍 Mount Pleasant, MI</p>
 <p>📧 pushkargadipalli@gmail.com</p>
-<p>🔗 <a href="https://www.linkedin.com/in/pushkar-gadipalli-267216322/">LinkedIn</a></p>
-<p>💻 <a href="https://github.com/pushkargadipalli-rgb">GitHub</a></p>
+<p>🔗 <a href="https://www.linkedin.com/in/pushkar-gadipalli-267216322/" target="_blank">LinkedIn</a></p>
+<p>💻 <a href="https://github.com/pushkargadipalli-rgb" target="_blank">GitHub</a></p>
 </div>
 
 </section>
